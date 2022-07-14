@@ -5,14 +5,14 @@ class Car {
     this.widht = width;
     this.height = height;
 
-    this.controls = new Constrols();
+    this.controls = new Controls();
   }
 
   update() {
-    if (this.constrols.forward) {
+    if (this.controls.forward) {
       this.y -= 2;
     }
-    if (this.constrols.reverse) {
+    if (this.controls.reverse) {
       this.y += 2;
     }
   }
